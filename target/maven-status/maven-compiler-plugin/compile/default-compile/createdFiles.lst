@@ -1,0 +1,6 @@
+org\example\mapper\UserMapper.class
+org\example\controller\HelloController.class
+org\example\helloWorldApplication.class
+org\example\service\impl\HelloServicelmpl.class
+org\example\service\HelloService.class
+org\example\entity\User.class

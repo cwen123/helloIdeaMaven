@@ -2,8 +2,23 @@
 <!DOCTYPE mapper
         PUBLIC "-//mybatis.org//DTD mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-    <mapper namespace="org.example.mapper.UserMapper">
-    <select id="getUser" resultType="org.example.entity.User"> select * from user where id = #{id} </select>
-    <insert id="addUser" >insert into user (name,age) values(#{name},#{age})</insert>
-    <delete id="delUser">delete from user where id=#{id};</delete>
-    </mapper>
+<mapper namespace="org.example.mapper.UserMapper">
+<!--    TODO 注意一下和自己保持风格一致，别有的加分号，有的不加 -->
+    <select id="getUser" resultType="org.example.entity.User">
+        select *
+        from user
+        where id = #{id}
+    </select>
+
+    <insert id="addUser">
+        insert into user (name, age)
+        values (#{name}, #{age})
+    </insert>
+
+    <delete id="delUser">
+        delete
+        from user
+        where id = #{id};
+    </delete>
+
+</mapper>
